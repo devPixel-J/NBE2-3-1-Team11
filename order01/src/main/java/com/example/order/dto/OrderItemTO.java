@@ -15,13 +15,13 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @Alias(value="orderItemTO")
 public class OrderItemTO {
-    private long orderItemId;
     private int quantity;
     private long productId;
     private long orderId;
+    private String email;
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate date;
     private String address;
     private String zipcode;
-    private int totalPrice;
+    private int price;
 }

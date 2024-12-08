@@ -40,6 +40,7 @@ public class OrderController {
     @GetMapping("/order/{email}")
     public ArrayList<OrderTO> getOrders(@PathVariable String email) {
         ArrayList<OrderTO> lists = orderDAO.orderList(email);
+
         return lists;
     }
 
